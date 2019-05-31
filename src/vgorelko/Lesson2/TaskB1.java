@@ -1,21 +1,27 @@
 package vgorelko.Lesson2;
+import java.util.*;
 
 public class TaskB1 {
 
     public static void main(String[] args) {
-   /*     {
-            final int min = 10; // Минимальное число для диапазона
-            final int max = 75; // Максимальное число для диапазона
-            final int rnd = rnd(min, max);
 
-            System.out.println("Псевдослучайное целое число: " + rnd);
+        int max = 155;
+        int min = 5;
+        int randomNum = min + (int)(Math.random() * ((max - min) + 1)); // т.к. 0.0 <= Math.random() < 1.0
+
+        System.out.println("Сгенерированное рандомное число: " + randomNum);
+
+        if (25 <= randomNum && 100 >= randomNum) {
+
+            System.out.println("Сгенерированное число попало в диапазон [25;100]");
+
+        } else {
+
+            System.out.println("Сгенерированное число вне диапазона");
+
         }
 
-*//**
- * Метод получения псевдослучайного целого числа от min до max (включая max);
- *//*
-        public static int rnd ( int min, int max) {
-            max -= min;
-            return (int) (Math.random() * ++max) + min;*/
-        }
+
+    }
+
     }
