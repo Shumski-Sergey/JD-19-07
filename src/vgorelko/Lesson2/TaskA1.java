@@ -9,7 +9,7 @@ public class TaskA1 {
         m = 8;
         n = 5;
 
-        if (10-m > 10-n) {
+        if (Math.abs(m - 10) > Math.abs(n - 10)) {
 
             System.out.println("Ближайешее к десяти " + n);
 
