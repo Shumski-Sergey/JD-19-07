@@ -10,7 +10,6 @@ public class TaskB3 {
         // 2. Как узнать сколько памяти тратится на каждый из способов решения.
         int number;
         int sum = 0;
-
         while (sum == 0) {
             System.out.print("Enter the number: ");
             BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
