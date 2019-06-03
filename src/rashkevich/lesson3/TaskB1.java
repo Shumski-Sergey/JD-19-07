@@ -6,15 +6,23 @@ public class TaskB1 {
         int counter=0;
         String str=""+i;
         String newStr="";
+
         char chars[]=str.toCharArray();
+
         int length=str.length();
-        for (int j=0;j<length;j++){
-            counter=counter++;
-            if(counter==3){
-                newStr=" e"+newStr;
-            }
+        for (int j=length-1;j>=0;j--){
             newStr=newStr+chars[j];
-            System.out.println(newStr);
+            counter++;
+            if(counter==3){
+                newStr=newStr+" ";
+                counter=0;
+            }
+        }
+
+        char newChars[]=newStr.toCharArray();
+        for ( int k=newStr.length()-1;k>=0;k--){
+
+            System.out.print(newChars[k]);
         }
     }
 }
