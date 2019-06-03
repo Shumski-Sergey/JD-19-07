@@ -3,20 +3,18 @@ package rashkevich.lesson3;
 public class TaskB1 {
     public static void main(String[] args){
         int i=20023143;
-        int num;
+        int counter=0;
         String str=""+i;
-        String strNum="";
-        System.out.println(str);
+        String newStr="";
+        char chars[]=str.toCharArray();
         int length=str.length();
-        while(i>0){
-
-            num=i%1000;
-            strNum=""+num;
-            if ()
-            str=num+" "+str;
-            //System.out.println(num);
-            i=i/1000;
+        for (int j=0;j<length;j++){
+            counter=counter++;
+            if(counter==3){
+                newStr=" e"+newStr;
+            }
+            newStr=newStr+chars[j];
+            System.out.println(newStr);
         }
-        System.out.println(str);
     }
 }
