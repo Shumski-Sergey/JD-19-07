@@ -1,4 +1,4 @@
-package dmbelov;
+package dmbelov.Lesson2;
 
 import java.util.Arrays;
 
