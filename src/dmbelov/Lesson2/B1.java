@@ -1,4 +1,4 @@
-package dmbelov;
+package dmbelov.Lesson2;
 
 public class B1 {
     public static void main(String[] args) {

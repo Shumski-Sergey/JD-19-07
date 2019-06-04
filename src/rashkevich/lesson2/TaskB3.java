@@ -1,4 +1,4 @@
-package rashkevich;
+package rashkevich.lesson2;
 
 import java.util.Scanner;
 
