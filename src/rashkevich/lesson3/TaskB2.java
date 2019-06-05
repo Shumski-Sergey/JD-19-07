@@ -13,7 +13,7 @@ public class TaskB2 {
             Random random=new Random();
             int index=random.nextInt(7)+2;
 
-           
+
         }
 
     }
