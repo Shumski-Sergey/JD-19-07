@@ -1,14 +1,15 @@
 package tolifer;
 
 
+import java.util.Random;
 
 public class zadB1 {
     public static void main (String [] args){
         int a;
         int max = 155;
-        
 
-        a = (int) Math.random();
+
+        a =new Random().nextInt(156)+5;
 
         if(5<=a&&a<=155){
             if(25<a&&a<100){
