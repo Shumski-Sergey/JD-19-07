@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Deal {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         String[][] deckOfCards = {
                 {"6 diamonds", "7 diamonds", "8 diamonds", "9 diamonds", "10 diamonds", "jack diamonds", "queen diamonds", "king diamonds", "ace diamonds"},
@@ -20,8 +20,8 @@ public class Deal {
                 {1, 1, 1, 1, 1, 1, 1, 1, 1},
                 {1, 1, 1, 1, 1, 1, 1, 1, 1}
         };
-        int [] arr2 = {1,2,3,4,4};
-        System.out.println(arr2.toString());
+
+
 
 //        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 //        int amount = Integer.parseInt(r.readLine());
