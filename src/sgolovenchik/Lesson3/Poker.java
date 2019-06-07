@@ -2,7 +2,7 @@ package sgolovenchik.Lesson3;
 
 import java.util.Scanner;
 
-public class poker {
+public class Poker {
 
     public static void main(String[] args)
     { Scanner in = new
