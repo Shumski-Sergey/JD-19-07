@@ -18,7 +18,7 @@ public class B1 {
         long time1 = stopTime1 - startTime1;
 
         startTime2 = System.currentTimeMillis();
-        for (int j=1; j<=100; j++){
+        for (int j=1; j<=10000; j++){
             StringBuilder s = new StringBuilder();
             s.append(str1).append(str2);
         }
