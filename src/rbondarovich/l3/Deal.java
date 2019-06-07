@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Deal {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         String[][] deckOfCards = {
                 {"6 diamonds", "7 diamonds", "8 diamonds", "9 diamonds", "10 diamonds", "jack diamonds", "queen diamonds", "king diamonds", "ace diamonds"},
@@ -21,30 +21,32 @@ public class Deal {
                 {1, 1, 1, 1, 1, 1, 1, 1, 1}
         };
 
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        int amount = Integer.parseInt(r.readLine());
-        String[] players = new String[amount];
-        for (int i = 0; i < amount; i++) {
-            players[i] = "Player №" + (i + 1);
-        }
-        int a = (int) (Math.random() * 4);
-        int b = (int) (Math.random() * 9);
-        StringBuffer deck = new StringBuffer();
-        for (String x : players) {
-            System.out.print(x + ": ");
-            for (int i = 0; i < 5; i++) {
 
-                while (cardsAvailability[a][b] == 0) {
-                    a = (int) (Math.random() * 4);
-                    b = (int) (Math.random() * 9);
-                }
-                cardsAvailability[a][b] = 0;
-                deck.append(deckOfCards[a][b]).append("; ");
-                System.out.print(deck);
-                deck.setLength(0);
-            }
-            System.out.println();
-        }
+
+//        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+//        int amount = Integer.parseInt(r.readLine());
+//        String[] players = new String[amount];
+//        for (int i = 0; i < amount; i++) {
+//            players[i] = "Player №" + (i + 1);
+//        }
+//        int a = (int) (Math.random() * 4);
+//        int b = (int) (Math.random() * 9);
+//        StringBuffer deck = new StringBuffer();
+//        for (String x : players) {
+//            System.out.print(x + ": ");
+//            for (int i = 0; i < 5; i++) {
+//
+//                while (cardsAvailability[a][b] == 0) {
+//                    a = (int) (Math.random() * 4);
+//                    b = (int) (Math.random() * 9);
+//                }
+//                cardsAvailability[a][b] = 0;
+//                deck.append(deckOfCards[a][b]).append("; ");
+//                System.out.print(deck);
+//                deck.setLength(0);
+//            }
+//            System.out.println();
+//        }
         // Проверка на повторные  карты
 //        int count = 0;
 //        for (int[]x : cardsAvailability) {
