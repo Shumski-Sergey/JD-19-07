@@ -1,4 +1,4 @@
-package sgolovenchik.Lesson3;
+/*package sgolovenchik.Lesson3;
 
 import java.util.Scanner;
 
@@ -52,4 +52,4 @@ public class poker {
                     ", " +cards[ k*5 ]);
         }
 }
-}
+}*/
