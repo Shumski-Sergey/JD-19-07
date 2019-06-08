@@ -36,17 +36,11 @@ public class Poker {
         for (int i = 1; count > i; i++) {         //count раз меняем две случайные
             int random1 = (int) (Math.random() * 53);  //карты в колоде друг на друга
             int random2 = (int) (Math.random() * 53);
-            System.out.println(random2 + "<->" + random1 + " ");//для информативности
-            // отображает что на что меняем (номера позиций в колоде)
 
             cards[0] = cards[random1];   //и меняем друг на друга через 'посредника' (ячейка обмена 0)
             cards[random1] = cards[random2];
             cards[random2] = cards[0];
         }
-
-        System.out.println(cards[51]); //для прикола посмотреть какие карты в колоде последние
-        System.out.println(cards[52]); //при плохом перемешивании там останутся тузы :)
-
         for (int k = 1; k <= N; k++) { //и раздаём.. первому 1-5 карту, второму 6-10 и т.д.
             System.out.println("Игрок N " + k + " получает карты: " + cards[k * 5 - 4] +
                     ", " + cards[k * 5 - 3] + ", " + cards[k * 5 - 2] + ", " + cards[k * 5 - 1] +

@@ -2,7 +2,7 @@ package ezhalabkevich.L2;
 
 public class B1 {
     public static void main(String[] args) {
-        //Task B1
+        //Task buhgalter
 
         double num = Math.random();
         num *= 100;
