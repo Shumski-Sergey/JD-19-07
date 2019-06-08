@@ -31,7 +31,7 @@ public class Task2 {
             str[i] = sc2.nextLine();
         }
 
-        //Сортируем значения пузырьком
+        //Сортируем значения пузырьком по возрастанию
 
         for ( int i = str.length-1; i>0; i--){
             for ( int j = 1; j<i; j++){
