@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6a4875a-2754-4e87-90dd-9af7229bd5bf" name="Default Changelist" comment="Tasks A-B of lesson 4 renamed">
+    <list default="true" id="c6a4875a-2754-4e87-90dd-9af7229bd5bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dmbelov/lesson4/A1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dmbelov/Lesson4/A1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dmbelov/lesson4/A2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dmbelov/Lesson4/A2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dmbelov/lesson4/A3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dmbelov/Lesson4/A3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dmbelov/lesson4/B1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dmbelov/Lesson4/B1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dmbelov/lesson4/B2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dmbelov/Lesson4/B2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dmbelov/lesson4/B3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dmbelov/Lesson4/B3.java" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/../" />
@@ -30,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dmbelov/Lesson5/A1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="153">
               <caret line="33" column="13" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="33" selection-end-column="13" />
             </state>
           </provider>
@@ -39,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dmbelov/Lesson5/A4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-192">
-              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            <state relative-caret-position="641">
+              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -87,6 +81,7 @@
         <option value="$PROJECT_DIR$/src/dmbelov/Lesson5/A1.java" />
         <option value="$PROJECT_DIR$/src/dmbelov/Lesson5/A2.java" />
         <option value="$PROJECT_DIR$/src/dmbelov/Lesson5/A3.java" />
+        <option value="$PROJECT_DIR$/src/dmbelov/Lesson5/A4version.java" />
         <option value="$PROJECT_DIR$/src/dmbelov/Lesson5/A4.java" />
       </list>
     </option>
@@ -213,12 +208,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rashkevich.lesson5.Task1" />
+    <configuration name="A4version" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dmbelov.Lesson5.A4version" />
       <module name="JD-19-07" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rashkevich.lesson5.*" />
+          <option name="PATTERN" value="dmbelov.Lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,10 +224,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.A4" />
+        <item itemvalue="Application.A4version" />
         <item itemvalue="Application.A3" />
         <item itemvalue="Application.A2" />
         <item itemvalue="Application.A1 (1)" />
-        <item itemvalue="Application.Task1" />
       </list>
     </recent_temporary>
   </component>
@@ -282,13 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560096432112</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tasks 1-3 are done">
+      <created>1560096878254</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560096878254</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.28139183" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.28139183" />
       <window_info id="Structure" order="1" sideWeight="0.5024155" side_tool="true" weight="0.28441754" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -297,7 +300,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5024155" side_tool="true" weight="0.28441754" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3800322" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,26 +335,14 @@
     <MESSAGE value="Lessons3" />
     <MESSAGE value="lesson3 + add" />
     <MESSAGE value="Tasks A-B of lesson 4 renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tasks A-B of lesson 4 renamed" />
+    <MESSAGE value="Tasks 1-3 are done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tasks 1-3 are done" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../A1/TaskB1/src/sgolovenchik/TaskB1.java" />
-    <entry file="file://$PROJECT_DIR$/../A1/TaskB2/src/sgolovenchik/TaskB2.java" />
-    <entry file="file://$PROJECT_DIR$/../A1/TaskB3/src/sgolovenchik/TaskB3.java" />
-    <entry file="file://$PROJECT_DIR$/src/sgolovenchik/TaskB3.java" />
-    <entry file="file://$PROJECT_DIR$/src/sgolovenchik/TaskB2.java" />
-    <entry file="file://$PROJECT_DIR$/src/sgolovenchik/TaskB1.java" />
-    <entry file="file://$PROJECT_DIR$/src/sgolovenchik/TaskA1.java" />
-    <entry file="file://$PROJECT_DIR$/src/sgolovenchik/Lesson2/TaskA1.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgolovenchik/Lesson2/TaskA2.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sgolovenchik/Lesson2/TaskB3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -629,24 +620,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ikalnaus/TaskA1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dmbelov/Lesson5/A3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="358">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dmbelov/Lesson5/A4version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dmbelov/Lesson5/A1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="153">
           <caret line="33" column="13" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="33" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dmbelov/Lesson5/A4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="641">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
         </state>
       </provider>
     </entry>
