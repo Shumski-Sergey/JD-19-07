@@ -1,4 +1,4 @@
-package dmbelov.lesson4;
+package dmbelov.Lesson4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
