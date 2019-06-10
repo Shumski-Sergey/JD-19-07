@@ -1,4 +1,4 @@
-package Lesson4;
+package dkuleshov.Lesson4;
 
 public class lesson41 {
     public static void main (String[] Args){
