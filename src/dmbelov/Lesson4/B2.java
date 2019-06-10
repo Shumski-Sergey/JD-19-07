@@ -1,4 +1,4 @@
-package dmbelov.lesson4;
+package dmbelov.Lesson4;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
