@@ -1,7 +1,7 @@
 package rashkevich.lesson5;
 
 import java.util.Scanner;
-
+//1. Ввести n строк с консоли, найти самую короткую и самую длинную строки. Вывести найденные строки и их длину.
 public class Task1 {
     public static void main(String[] args){
         System.out.println("Input string count:");
