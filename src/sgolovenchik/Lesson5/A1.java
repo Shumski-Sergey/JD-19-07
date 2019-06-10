@@ -5,9 +5,7 @@ import java.util.Scanner;
 
 public class A1 {
     public static void main(String[] args) {
-        Scanner in = new
-
-                Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("Сколько строк будем вводить? ");
         int N = in.nextInt();
         System.out.println(N);
@@ -22,7 +20,7 @@ public class A1 {
         for (int i = 0; i < N; i++) {//массив строк + длинна до сортировки
             System.out.println(S[i]+" "+ S[i].length());}
         //пузырьковая сортировка
-        String TEMP = new String();// временная строка для обмена
+        String TEMP = new String(); // временная строка для обмена
         for (int j =1; j< N; j++) {
 
             for (int i = 0; i < N - j; i++) {
