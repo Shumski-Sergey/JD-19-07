@@ -24,7 +24,7 @@ public class A6 {
     private static void wordsToChar(String[] words){
         char [] characters;
         int countCharacters;
-        int indexWord = 0;
+        int indexWord = -1;
         done:
         for(int i=0; i<words.length; i++){
             characters = words[i].toCharArray();
@@ -43,7 +43,7 @@ public class A6 {
                 }
             }
         }
-        if(indexWord==0) {
+        if(indexWord==-1) {
             System.out.print("There is no word that matches");
         }
     }
