@@ -1,4 +1,4 @@
-package Romanovskaya;
+package Romanovskaya.lesson2;
 
 import java.util.Scanner;
 
