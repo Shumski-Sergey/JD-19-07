@@ -2,42 +2,106 @@ package Romanovskaya.lesson6;
 
 public class Money {
 
-    private long rubFirst = 450;
-    private char coins1 = 30;
-    private byte centsFirst = (byte)coins1;
-    private long rubSecond = 250;
-    private char coins2 = 15;
-    private byte centsSecond = (byte)coins2;
+    private long rubs;
+    private byte cents;
 
 
-    // public Money(long rubl, byte cents1, long rub2 , byte cents2){
-      //  this.rubFirst = rubl;
-       // this.centsFirst = cents1;
-       // this.rubSecond = rub2;
-       // this.centsSecond = cents2;
-
-
-        public long getRubFirst() {
-            return rubFirst;
-        }
-
-        public byte getCentsFirst() {
-            return centsFirst;
-        }
-
-        public long getRubSecond() {
-            return rubSecond;
-        }
-
-        public byte getCentsSecond() {
-            return centsSecond;
-        }
-
-        //String readyNumberfirst = rubl+","+cents2;
-        //String readyNumberTwo = rub2+","+cents2;
-        //double d1 = Double.parseDouble(readyNumberfirst);
-        //double d2 = Double.parseDouble(readyNumberTwo);
-
+    public Money(long rubs, byte cents) {
+        this.rubs = rubs;
+        this.cents = cents;
     }
+
+    public Money(double v) {
+        return;
+    }
+
+
+    public long getRubs() {
+        return rubs;
+    }
+
+    public byte getCents() {
+        return cents;
+    }
+
+    public String toSting() {
+        return rubs + "," + cents;
+    }
+
+    public static double division(Money first, Money second) {
+        long firstTotal = first.getRubs() + first.getCents() / 100;
+        long secondTotal = second.getRubs() + second.getCents() / 100;
+        return (double) firstTotal / (double) secondTotal;
+    }
+
+    public static Money add(Money first, Money second) {
+        long rubs = first.getRubs() + second.getRubs();
+        int cents = first.getCents() + second.getCents();
+        if (cents > 99) {
+            rubs++;
+            cents -= 100;
+        }
+        if (cents < 0) {
+            rubs--;
+            cents += 100;
+        }
+        return new Money(rubs / (byte) cents);
+    }
+
+    public static double mult(Money first, Money second) {
+        long firstTotal = first.getRubs() + first.getCents() / 100;
+        long secondTotal = second.getRubs() + second.getCents() / 100;
+        return (double) firstTotal * (double) secondTotal;
+    }
+
+    public static Money whatleft(Money first, Money second) {
+        long rubs = first.getRubs() - second.getRubs();
+        int cents = first.getCents() - second.getCents();
+        if (cents > 99) {
+            rubs++;
+            cents -= 100;
+        }
+        if (cents < 0) {
+            rubs--;
+            cents += 100;
+        }
+        return new Money(rubs / (byte) cents);
+    }
+
+    public static double Test(Money first, Money second) {
+        long firstTotal = first.getRubs() + first.getCents() / 100;
+        long secondTotal = second.getRubs() + second.getCents() / 100;
+        return (double) firstTotal - (double) secondTotal;
+    }
+
+    public static double Test2 (Money first, Money second) {
+        long firstTotal = first.getRubs() + first.getCents() / 100;
+        long secondTotal = second.getRubs() + second.getCents() / 100;
+        return (double) firstTotal + (double) secondTotal;
+    }
+
+    public boolean equals(Money test) {
+        return test.getRubs() == rubs && test.getCents() == cents;
+    }
+    public static void main(String[] args) {
+        Money first = new Money(100,(byte) 15);
+        Money second = new Money(200, (byte) 50);
+        String allmoneyfirst = first.toSting();
+        String allmoneysecond = second.toSting();
+        System.out.println("Сумма чисел");
+        System.out.println(Test2(first,second));
+        System.out.println("Умножение");
+System.out.println(mult(first,second));
+        System.out.println("Разность чисел");
+        System.out.println(Test(first, second));
+        System.out.println("Деление");
+        System.out.println(division(first, second));
+    }
+
+
+}
+
+
+
 
 
