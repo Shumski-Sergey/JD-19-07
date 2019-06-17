@@ -2,7 +2,7 @@ package tolifer.L8;
 
 
 
-public class TaskA1 <T> {
+public class TaskA1  {
     public static void main (String [] args){
         Object [] array = new Object [] {"hi", 145, 986.345, "cat"};
 
