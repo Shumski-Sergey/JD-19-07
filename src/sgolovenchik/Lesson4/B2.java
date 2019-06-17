@@ -13,13 +13,14 @@ public class B2 {
         for (int i = 0; i < 26; i++) {
             alphabet[i] = (char) (97 + i);
         } //наполняю массив номерами Unicode англ. алфавита, нижний регистр
-
-        for (int k = 0; k < alphabet.length; k++) {
-            for (int j = 0; j < textArray.length; j++) {
+        String Symb = new String();
+        for (int k = 0; k < alphabet.length; k++) {         //вывод на консоль символов из строки
+            for (int j = 0; j < textArray.length; j++) {    //в алфавитном порядке, нижний регистр
                 if (textArray[j] == alphabet[k]) {
-                    System.out.print(alphabet[k]); break;
+                    Symb = Symb + alphabet[k]; k++;
                 }
             }
         }
+        System.out.println(Symb);
     }
 }
