@@ -4,6 +4,11 @@ public class Fridge extends LargeScaleAppliances {
     private String construct;
     private String coolingSystem;
 
+    @Override
+    void TurningOn(){
+        setTurnedOn(true);
+    }
+
     public String getConstruct() {
         return construct;
     }

@@ -7,9 +7,7 @@ public abstract class Appliances {
     private String color;
     private int weight;
 
-    abstract void TurningOn{
-        setTurnedOn(true);
-    }
+    abstract void TurningOn();
 
     public String getManufacturer() {
         return manufacturer;

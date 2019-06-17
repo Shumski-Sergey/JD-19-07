@@ -7,4 +7,8 @@ public class KitchenStove extends LargeScaleAppliances {
     private int numberOfBurners;
     private boolean electricIgnition;
 
+    @Override
+    void TurningOn(){
+        setTurnedOn(true);
+    }
 }
