@@ -36,7 +36,6 @@ public class Money {
         String withComma = Double.toString(result);
         withComma = withComma.replace('.', ',');
         return withComma;
-
     }
 
     static double Summing (Money moneyAmount1, Money moneyAmount2){

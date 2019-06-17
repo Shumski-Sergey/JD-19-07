@@ -5,6 +5,11 @@ public class WashingMachine extends LargeScaleAppliances {
     private double capacity;
     private int maximumSpinSpeed;
 
+    @Override
+    void TurningOn(){
+        setTurnedOn(true);
+    }
+
     public String getUploadMethod() {
         return uploadMethod;
     }

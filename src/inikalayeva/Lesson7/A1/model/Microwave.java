@@ -5,6 +5,11 @@ public class Microwave extends Cooking {
     int power;
     String insideCoating;
 
+    @Override
+    void TurningOn(){
+        setTurnedOn(true);
+    }
+
     public String getType() {
         return type;
     }

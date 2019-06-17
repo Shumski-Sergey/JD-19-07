@@ -5,6 +5,11 @@ public class Multicooker extends Cooking{
     private String innerBowlCover;
     private String shapeOfBowl;
 
+    @Override
+    void TurningOn(){
+        setTurnedOn(true);
+    }
+
     public int getVolumeOfBowl() {
         return volumeOfBowl;
     }
