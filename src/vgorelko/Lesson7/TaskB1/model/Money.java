@@ -5,7 +5,12 @@ public class Money {
        private long rub;
        private char penny;
 
-        public long getRub() {
+    public Money(long rub, char penny) {
+        this.rub = rub;
+        this.penny = penny;
+    }
+
+    public long getRub() {
                 return rub;
         }
 

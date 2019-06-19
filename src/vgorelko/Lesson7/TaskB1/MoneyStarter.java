@@ -7,13 +7,28 @@ import java.io.InputStreamReader;
 public class MoneyStarter {
 
     public static void main(String[] args) throws IOException {
-
-
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String textForChar = reader.readLine();
 
-        char arr [] = textForChar.toCharArray();
-        System.out.println(arr);
+        //Ввод рублей
+        String rubT = reader.readLine();
+        long rub = Long.valueOf(rubT);
+
+        //Ввод копеек
+        char arr [] = reader.readLine().toCharArray();
+        String numText = "";
+        for (int x = 0; x < arr.length; x++) {
+
+            numText = numText + arr[x];
+
+        }
+
+        int num = Integer.parseInt(numText);
+
+        char a = (char) 200;
+        char b = (char) 187;
+        System.out.println(a-b);
+
+      //  char c = a + 0;
 
     //???????????
     }
