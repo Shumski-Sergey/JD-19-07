@@ -1,7 +1,9 @@
 package vgorelko.Lesson9;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class TaskA2 {
@@ -23,13 +25,18 @@ public class TaskA2 {
        // numbers = numbers.stream().distinct().collect(Collectors.toList());
 
         //Способ второй удаления дублей
-        Object[] st = numbers.toArray();
+/*        Object[] st = numbers.toArray();
         for (Object s : st) {
             if (numbers.indexOf(s) != numbers.lastIndexOf(s)) {
                 numbers.remove(numbers.lastIndexOf(s));
             }
-        }
-        System.out.println(numbers);
+        }*/
+        //Третий способ удаления дублей
+        Set<Integer> set = new HashSet<>(); //Так как Set принимает только уникальыне значения
+
+        set.addAll(numbers);
+
+        System.out.println(set);
 
     }
 

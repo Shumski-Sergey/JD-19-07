@@ -1,1 +1,1 @@
-Fixed crash issue by checking & unchecking "Disable extension column" option in preferences dialog.
+Fixed crash issue by checking & unchecking "Disable extension column" option in preferences dialog. Fixed crash issue by checking & unchecking "Disable extension column" option in preferences dialog. dialog. dialog. dialog.
