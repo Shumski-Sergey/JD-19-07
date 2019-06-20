@@ -17,5 +17,26 @@ public class Task3 {
         System.out.println("Список всех оценок");
 
         System.out.println(list);
+
+        Iterator<Integer> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        int maximal = list.get(0);
+        int minimal = list.get(0);
+
+        for (int i = 0; i < list.size(); i++) {
+
+            if (minimal > list.get(i))
+                minimal = list.get(i);
+
+            if (maximal < list.get(i))
+                maximal = list.get(i);
+
+        }
+            System.out.println("Минимальное число" + " " +  minimal);
+            System.out.println("Максимальное число" + " " + maximal);
+        }
     }
-}
+
