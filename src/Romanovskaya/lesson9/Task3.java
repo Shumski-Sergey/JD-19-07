@@ -18,25 +18,25 @@ public class Task3 {
 
         System.out.println(list);
 
-        Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
-
         int maximal = list.get(0);
         int minimal = list.get(0);
 
-        for (int i = 0; i < list.size(); i++) {
+        Iterator<Integer> iterator = list.iterator();
+        while (iterator.hasNext()) {
 
-            if (minimal > list.get(i))
-                minimal = list.get(i);
+            for (Integer test : list) {
+                if (test < minimal)
+                    minimal = test;
+                if (test > maximal)
+                    maximal = test;
 
-            if (maximal < list.get(i))
-                maximal = list.get(i);
+            }
 
-        }
-            System.out.println("Минимальное число" + " " +  minimal);
+            System.out.println("Минимальное число" + " " + minimal);
             System.out.println("Максимальное число" + " " + maximal);
+
+            break;
         }
     }
 
+}
