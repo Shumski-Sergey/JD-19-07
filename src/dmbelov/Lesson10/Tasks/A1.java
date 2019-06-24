@@ -1,4 +1,4 @@
-package dmbelov.Lesson10;
+package dmbelov.Lesson10.Tasks;
 
 import java.util.ArrayList;
 import java.util.HashSet;
