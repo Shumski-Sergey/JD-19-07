@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArrayListVsLinkedList {
     private static final int QUANTITY = 1000000;
-    private static final int CHOICE = 10000;
+    private static final int CHOICE = 1000;
 
     public static void main(String[] args) {
         ArrayList<Double> arrayList = new ArrayList<>();
