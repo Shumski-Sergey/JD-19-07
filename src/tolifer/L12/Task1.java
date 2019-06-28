@@ -14,7 +14,15 @@ public class Task1 {
 
         List<Integer> list = new Random().ints().limit(100000).boxed().collect(Collectors.toList());
 
-        list.stream();
+
+        long start = System.nanoTime();
+        list.stream().map(x -> x+1);
+        System.out.println(System.nanoTime()-start);
+
+        start = System.nanoTime();
+        list.parallelStream().map(x -> x+1);
+        System.out.println(System.nanoTime()-start);
+
 
     }
 }
