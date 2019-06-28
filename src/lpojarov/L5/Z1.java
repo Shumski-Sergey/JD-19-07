@@ -1,4 +1,4 @@
-package lpojarov;
+package lpojarov.L5;
 
 
 import java.util.Scanner;
@@ -15,8 +15,8 @@ public class Z1 {
         double X2=N-10;
        //Math.abs(X1);
        // Math.abs(X2);
-        if(X1>X2) {
-            System.out.print( M+ " -это число ближе к 10" );
+        if(Math.abs(X1)<Math.abs(X2)) {
+            System.out.print( M+ " -это число ближе к 10*" );
         }
             else
         {

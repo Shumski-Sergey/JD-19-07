@@ -1,4 +1,4 @@
-package lpojarov;
+package lpojarov.L5;
 
 import java.util.Scanner;
 public class z2 {
