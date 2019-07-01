@@ -30,6 +30,7 @@ public class TaskA3 {
 // Duration oneDay = Duration.between(today, yesterday);
         int numberDaysForNewYear = (int) Duration.between(today.atStartOfDay(), yesterday.atStartOfDay()).toDays(); //Сравниваем количество дней
 
+        
         System.out.println("Количество дней до нового года: " + numberDaysForNewYear);
     }
 
