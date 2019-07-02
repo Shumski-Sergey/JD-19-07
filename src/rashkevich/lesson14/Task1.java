@@ -5,7 +5,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
-
+//1. Ввести с консоли имя файла. Найти байт или байты с максимальным
+//        количеством повторов. Вывести их на экран через пробел.
+//        Закрыть поток ввода-вывода.
 
 public class Task1 {
     public static void main(String[] args){

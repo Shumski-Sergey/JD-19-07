@@ -1,0 +1,8 @@
+
+C:\Users\iland\IdeaProjects\JD-19-07_clone5\src\rashkevich\lesson14\load.txt 	| load.txt	|Mon Jul 01 20:02:12 MSK 2019
+
+C:\Users\iland\IdeaProjects\JD-19-07_clone5\src\rashkevich\lesson14\Task1.java 	| Task1.java	|Tue Jul 02 07:38:52 MSK 2019
+
+C:\Users\iland\IdeaProjects\JD-19-07_clone5\src\rashkevich\lesson14\Task2.java 	| Task2.java	|Tue Jul 02 08:16:34 MSK 2019
+
+C:\Users\iland\IdeaProjects\JD-19-07_clone5\src\rashkevich\lesson14\Task3.java 	| Task3.java	|Tue Jul 02 07:56:36 MSK 2019
