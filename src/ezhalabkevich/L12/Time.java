@@ -11,7 +11,7 @@ public class Time {
         Date date = new Date();
         long timeStream = System.currentTimeMillis();
         IntStream.range(0, 1000000).forEach(ints::add);
-       ints.stream().forEach(s-> System.out.print(s+1));
+        ints.stream().mapToInt(s->s+1).forEach(System.out::println);
        System.out.println("кол-во элементов " +ints.size());
         timeStream=System.currentTimeMillis()-timeStream;
        System.out.println("Время выполнения для Stream"+timeStream);
