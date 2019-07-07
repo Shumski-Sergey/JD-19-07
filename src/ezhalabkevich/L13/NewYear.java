@@ -17,20 +17,25 @@ public class NewYear {
       При вводе неверных данных должно быть выведено сообщение об ошибке. Считается, что год невисокосный.*/
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         List<Integer> arrayList = new ArrayList<>();
-/*
-        System.out.println("Введите номер месяца и номер дня через пробел! ");
-        String monthDay = reader.readLine();
-        for (String words : monthDay.split(" ")) {
-            arrayList.add(Integer.parseInt(words));
+try {
+    System.out.println("Введите номер месяца и номер дня через пробел! ");
+    String monthDay = reader.readLine();
 
-        }
-        LocalDate date =  LocalDate.of(0, arrayList.get(0),arrayList.get(1)) ;
-        System.out.println("До Нового года осталось ... "+(365-date.getDayOfYear())+" дней!");
-*/
-        Stream.of("10", "11", "32")
+    for (String words : monthDay.split(" ")) {
+        arrayList.add(Integer.parseInt(words));
+
+    }
+    LocalDate date = LocalDate.of(0, arrayList.get(0), arrayList.get(1));
+    System.out.println("До Нового года осталось ... " + (365 - date.getDayOfYear()) + " дней!");
+}catch(IOException e){
+    e.getMessage();
+    System.out.println("Введены неверные данные");
+
+}
+      /* Stream.of("10", "11", "32")
                         .map(x -> Integer.parseInt(x, 16))
                         .forEach(System.out::println);
-
+*/
 
     }
 }
