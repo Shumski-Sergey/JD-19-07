@@ -7,6 +7,7 @@ import java.io.*;
 
 public class TaskB1 {
 
+    
     public static void main(String[] args) {
 
         try(FileInputStream fin=new FileInputStream("newfile.txt");
