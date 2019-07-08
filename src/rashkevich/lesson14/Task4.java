@@ -18,8 +18,8 @@ public class Task4 {
         BufferedWriter bw=null;
         int size=1024*1000*100;
         try {
-             br=new BufferedReader(new InputStreamReader(new FileInputStream(f.getAbsolutePath()),"Cp1251"));
-             bw=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fout.getAbsolutePath()),"Cp1251"));
+             br=new BufferedReader(new InputStreamReader(new FileInputStream(f.getAbsolutePath()),"UTF-8"));
+             bw=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fout.getAbsolutePath()),"UTF-8"));
              while (fout.length()<size){
                 br.mark(size);
              while((str=br.readLine())!=null){
