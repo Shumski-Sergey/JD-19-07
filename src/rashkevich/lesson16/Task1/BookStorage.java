@@ -4,39 +4,53 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class BookStorage {
-    private LinkedList<String> books;
+    private LinkedList<Book> books;
 
     public BookStorage(){
         books=new LinkedList<>();
     }
 
-    public void add(String book){
+    public void add(Book book){
         books.add(book);
     }
 
     public void printBookStorage(){
-        books.stream().forEach(System.out::println);
+        if(books.size()>0){
+            System.out.println("Storage books:");
+            books.stream().forEach(s->System.out.println(s.getName()+" "+s.getPlaceToRead()));
+            System.out.println("==============");
+        }
     }
 
-    public String take(){
-        String book=new String();
-        if (books.size()!=0){
-            int i=1;
-            while(i==1){
-                try {
-                    book = books.removeLast();
-                    i=0;
-                } catch (NoSuchElementException e){
-                    System.out.println("Wait for books");
-                    book="no books";
-            }
-
-            }
-            }
-        else {
-            System.out.println("Wait for books");
-            book="no books";
+    public Book take(Book book){
+        if(!books.remove(book)){
+            book=new Book("no","no");
         }
+//        Book b1=book;
+//        if (!books.contains(book)){
+//        book=new Book("no","no");
+//        }
+//        if (books.size()!=0){
+//            int i=1;
+//            int countWaiting=0;
+//            while((i==1)||(countWaiting<5)){
+//                try {
+//                    if (books.contains(b1)){
+//                    books.remove(b1);
+//                    book=b1;
+//                    }
+//                    i=0;
+//                } catch (NoSuchElementException e){
+//                    System.out.println("Wait for books");
+//                   // book=new Book("no","no");
+//                    countWaiting++;
+//                }
+//            }
+//        }
+////        else {
+//            System.out.println("Wait for books");
+//            book=new Book("no","no");
+//        }
         return book;
     }
 }
