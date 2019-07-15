@@ -6,5 +6,8 @@ public class TunelRunner {
         TrainProducer trainProducer=new TrainProducer(10,tunelPool);
         Thread producer=new Thread(trainProducer);
         producer.start();
+        TrainConsumer trainConsumer=new TrainConsumer(10,tunelPool);
+        Thread consumer=new Thread(trainConsumer);
+        consumer.start();
     }
 }

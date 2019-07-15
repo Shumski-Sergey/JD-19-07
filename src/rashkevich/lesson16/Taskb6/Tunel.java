@@ -1,12 +1,14 @@
 package rashkevich.lesson16.Taskb6;
 
-import java.util.LinkedList;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Semaphore;
 
 public class Tunel {
     private int id;
     private int trainInTunelCount;
-    private LinkedList<Train> trains;
+    private BlockingQueue<Train> trainBlockingQueue;
     private final Semaphore semaphore=new Semaphore(1);
 
     public Semaphore getSemaphore() {
@@ -16,7 +18,7 @@ public class Tunel {
     public Tunel(int i, int trainInTunelCount) {
         this.id=i;
         this.trainInTunelCount=trainInTunelCount;
-        trains=new LinkedList<>();
+        trainBlockingQueue =new ArrayBlockingQueue<Train>(trainInTunelCount);
     }
 
     public int getId() {
@@ -27,7 +29,7 @@ public class Tunel {
         return trainInTunelCount;
     }
 
-    public LinkedList<Train> getTrains() {
-        return trains;
+    public BlockingQueue<Train> getTrainBlockingQueue() {
+        return trainBlockingQueue;
     }
 }

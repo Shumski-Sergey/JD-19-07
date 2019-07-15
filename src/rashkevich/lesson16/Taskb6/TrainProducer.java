@@ -1,7 +1,7 @@
 package rashkevich.lesson16.Taskb6;
 
 import java.util.LinkedList;
-import java.util.logging.Logger;
+import java.util.concurrent.TimeUnit;
 
 public class TrainProducer implements Runnable{
     private LinkedList<Train> trainProducerList;
@@ -22,17 +22,22 @@ public class TrainProducer implements Runnable{
     public void run() {
 
     while(trainProducerList.size()!=0){
-        Train train=trainProducerList.remove(); System.out.println("take train "+train.getId());
+        Train train=trainProducerList.removeFirst(); System.out.println("Producer: take train "+train.getId());
            for (Tunel tunel:tunelPool.getTunelList()){
-                if (tunel.getTrains().size()<tunel.getTrainInTunelCount()){
-                    if(tunel.getTrains().add(train)){
-                        System.out.println("Train "+train.getId()+" went into the tonnel:"+tunel.getId()+"trains in the tonnel:"+tunel.getTrains().size());
-                        break;
-                    } else{
-                        trainProducerList.add(train);
-                        System.out.println("Train "+train.getId()+" return in queue");
-                    }
-                }
+               // if (tunel.getTrainBlockingQueue().size()<tunel.getTrainInTunelCount()){
+
+
+                        if(tunel.getTrainBlockingQueue().offer(train)){
+                            System.out.println("Producer: Train "+train.getId()+" passed in the tonnel:"+tunel.getId()+", trains in the tonnel:"+tunel.getTrainBlockingQueue().size());
+                            break;
+                        }
+
+               try {
+                   TimeUnit.MILLISECONDS.sleep(5);
+               } catch (InterruptedException e) {
+                   e.printStackTrace();
+               }
+               //}
            }
     }
 
