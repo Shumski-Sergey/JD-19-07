@@ -8,7 +8,7 @@ public class Car implements Runnable{
     private Parking parking;
     private int waitingTime;
 
-    public Car(int id,Parking parking, int waitingTime) {
+    public Car(int id, Parking parking, int waitingTime) {
         this.id = id;
         this.parking=parking;
         this.waitingTime=waitingTime;

@@ -1,11 +1,9 @@
 package vgorelko.Lesson10.TaskB.Basket;
 
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.Map;
 
 
 public class BasketControler {
