@@ -9,11 +9,16 @@ public class Tunel {
     private int id;
     private int trainInTunelCount;
     private BlockingQueue<Train> trainBlockingQueue;
-    private final Semaphore semaphore=new Semaphore(1);
+    private int direction; //0-no direction, 1,2 -two different directions
 
-    public Semaphore getSemaphore() {
-        return semaphore;
+    public int getDirection() {
+        return direction;
     }
+
+    public void setDirection(int direction) {
+        this.direction = direction;
+    }
+
 
     public Tunel(int i, int trainInTunelCount) {
         this.id=i;

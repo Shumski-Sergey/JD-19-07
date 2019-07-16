@@ -26,10 +26,12 @@ public class TrainProducer implements Runnable{
            for (Tunel tunel:tunelPool.getTunelList()){
                // if (tunel.getTrainBlockingQueue().size()<tunel.getTrainInTunelCount()){
 
-
-                        if(tunel.getTrainBlockingQueue().offer(train)){
-                            System.out.println("Producer: Train "+train.getId()+" passed in the tonnel:"+tunel.getId()+", trains in the tonnel:"+tunel.getTrainBlockingQueue().size());
-                            break;
+                        if((tunel.getTrainBlockingQueue().size()==0)||(tunel.getDirection()==train.getDirection())){
+                            if(tunel.getTrainBlockingQueue().offer(train)){
+                                System.out.println("Producer: Train "+train.getId()+" direction:"+train.getDirection()+" passed in the tonnel:"+tunel.getId()+" direction:"+tunel.getDirection()+", trains in the tonnel:"+tunel.getTrainBlockingQueue().size());
+                                tunel.setDirection(train.getDirection());
+                                break;
+                            }
                         }
 
                try {

@@ -15,9 +15,9 @@ public class Train {
         int direction=1;
         int decide=(int)(Math.random()*100);
         if (decide>50){
-            decide=2;
+            direction=2;
         }
-        return decide;
+        return direction;
     }
 
     public int getId() {
