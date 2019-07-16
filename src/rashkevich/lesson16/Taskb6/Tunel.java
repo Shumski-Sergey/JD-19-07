@@ -1,22 +1,29 @@
 package rashkevich.lesson16.Taskb6;
 
-import java.util.LinkedList;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Semaphore;
 
 public class Tunel {
     private int id;
     private int trainInTunelCount;
-    private LinkedList<Train> trains;
-    private final Semaphore semaphore=new Semaphore(1);
+    private BlockingQueue<Train> trainBlockingQueue;
+    private int direction; //0-no direction, 1,2 -two different directions
 
-    public Semaphore getSemaphore() {
-        return semaphore;
+    public int getDirection() {
+        return direction;
     }
+
+    public void setDirection(int direction) {
+        this.direction = direction;
+    }
+
 
     public Tunel(int i, int trainInTunelCount) {
         this.id=i;
         this.trainInTunelCount=trainInTunelCount;
-        trains=new LinkedList<>();
+        trainBlockingQueue =new ArrayBlockingQueue<Train>(trainInTunelCount);
     }
 
     public int getId() {
@@ -27,7 +34,7 @@ public class Tunel {
         return trainInTunelCount;
     }
 
-    public LinkedList<Train> getTrains() {
-        return trains;
+    public BlockingQueue<Train> getTrainBlockingQueue() {
+        return trainBlockingQueue;
     }
 }
